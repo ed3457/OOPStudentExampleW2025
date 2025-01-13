@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std; 
 class Student
 {
@@ -8,8 +9,9 @@ private:
 	string name;
 	string id;	
 	string major;
-	// Mutators (set/get functions) 
+	
 public: 
+	// Mutators (set/get functions) 
 	void setName(string n); 
 	string getName();
 
@@ -18,7 +20,6 @@ public:
 
 	void setMajor(string m);
 	string getMajor();
-
 
 	// define functions 
 	void printStudentInfo();
