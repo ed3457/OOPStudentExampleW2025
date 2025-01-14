@@ -39,3 +39,11 @@ void Student::printStudentInfo()
 	cout << getID() << endl;
 	cout << getMajor() << endl;
 }
+
+Student::Student(string n, string i, string m)
+{
+	setName(n);
+	setID(i);
+	setMajor(m);
+
+}

@@ -3,12 +3,8 @@ using namespace std;
 #include "Student.h"
 int main()
 {
-	Student student1;
-	Student student2;
-
-	student1.setID("12345");
-	student1.setName("Jack");
-	student1.setMajor("Math");
+	Student student1("Jack","12345","Math");
+	//Student student2;
 
 	student1.printStudentInfo();
 

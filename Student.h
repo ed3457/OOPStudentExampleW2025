@@ -24,6 +24,7 @@ public:
 	// define functions 
 	void printStudentInfo();
 
+	Student(string n, string i, string m);
 
 };
 
