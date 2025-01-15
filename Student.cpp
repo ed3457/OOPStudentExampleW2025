@@ -47,3 +47,17 @@ Student::Student(string n, string i, string m)
 	setMajor(m);
 
 }
+
+Student::Student()
+{
+	setName("not set yet");
+	setID("not generated");
+	setMajor("not set yet");
+
+}
+
+Student::Student(string n, string i)
+{
+	setName(n);
+	setID(i);
+}

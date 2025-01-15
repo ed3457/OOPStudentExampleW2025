@@ -25,6 +25,8 @@ public:
 	void printStudentInfo();
 
 	Student(string n, string i, string m);
+	Student(string n, string i);
+	Student();// default constructor 
 
 };
 
