@@ -3,7 +3,8 @@
 void Student::setName(string n)
 {
 	//TODO: validation + exception handling  
-
+	if (n == "")
+		throw 1; // means empty name 
 	name = n; 
 }
 
@@ -15,16 +16,23 @@ string Student::getName()
 
 void Student::setID(string i)
 {
+	if (i == "")
+		throw 1; // means empty ID 
 	id = i;
 }
 
 string Student::getID()
 {
+	
 	return id; 
 }
 
 void Student::setMajor(string m)
 {
+	if (m == "")
+		throw 1; // means empty name 
+	if (m != "CS" && m != "Eng") // invalid major 
+		throw 2; 
 	major = m;
 }
 
